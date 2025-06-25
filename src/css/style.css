@@ -6,6 +6,8 @@
 @import url("sections/about.css");
 @import url("sections/popular-food.css");
 @import url("sections/trending.css");
+@import url("sections/newsletter");
+@import url("sections/footer.css");
 
 :root {
     --playfair-display: "Playfair Display", serif;
