@@ -26,6 +26,11 @@
     --color-creamson: #fff0de;
 }
 
+[data-aos] {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +45,14 @@ body {
     font-family: var(--plus-jakarta-sans);
 }
 
+.hero,
+.about,
+.popular-foods,
+.trending,
+.newsletter {
+    overflow-x: clip;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -51,3 +64,200 @@ li {
     list-style: none;
 }
 
+/* Start Media queries */
+
+/* Media queries for Header */
+
+@media screen and (max-width: 900px) {
+    
+    .header__nav {
+        background-color: var(--primary-color);
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__logo h4 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 900px ) {
+    
+    .nav__mobile-menu {
+        display: none;
+    }
+}
+
+/* Media queries for Hero section */
+
+@media screen and (max-width: 1060px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .hero__image {
+        z-index: -1;
+    }
+
+    .hero__image img {
+        width: 100%;
+        transform: matrix(1, .05, 0, 1.25, 0, 0) !important;
+    }
+
+    .hero__content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero__info {
+        padding: 32px;
+    }
+
+    .hero__info p, .hero__buttons {
+        margin: 20px 0;
+    }
+
+    .hero__testimonial {
+        flex-direction: column;
+        padding-inline: 20px;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .testimonial__customer {
+        padding-left: 20px;
+    }
+
+}
+
+/* Media queries for About us section */
+
+@media screen and (max-width: 1060px) {
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about__images div {
+        padding-inline: 32px;
+    }
+
+    .upper-image img,
+    .lower-image img {
+        width: 50%;
+        height: 160px;
+        object-fit: contain;   
+    }
+
+    .about__content {
+        padding: 32px;
+    }
+}
+
+/* Media queries for Popular food section */
+
+@media screen and (max-width: 1060px) {
+
+    .popular-foods__list {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .left-card,
+    .right-card, 
+    .selected-card {
+        min-width: 100%;
+    }
+
+}
+
+/* Media queries for Trending section */
+
+@media screen and (max-width: 1060px) {
+    .trending-sushi{
+        flex-direction: column;
+    }
+    
+    .trending-drink {
+        flex-direction: column-reverse;
+    }
+
+    .upper-arrow-vertical, .upper-arrow-horizontal,
+    .lower-arrow-vertical, .lower-arrow-horizontal {
+        display: none;
+    }
+
+    .discover-badge {
+        position: relative;
+        border-radius: 0;
+        width: 100%;
+        height: fit-content;
+        padding:10px;
+    }
+}
+
+/* Media queries for Newsletter section */
+
+@media screen and (max-width: 1060px) {
+
+    .newsletter {
+        padding: 64px 32px;
+    }
+
+    .newsletter__content h2 {
+        font-size: 4rem;
+        line-height: 100px;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+        gap: 20px;
+        min-width: 100%;
+        border-radius: 20px;
+        padding: 0;
+        border: none;
+    }
+
+    .subscription-form input {
+        min-width: 100%;
+            padding: 14px 14px 14px 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, .5);
+            border-radius: 46px;
+    }
+
+    .subscription-form button {
+        min-width: 100%;
+    }
+}
+
+
+/* Media queries for Footer */
+
+@media screen and (max-width: 1060px) {
+    footer {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .footer__menu {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 60px;
+    }
+
+    .footer__menu li {
+        flex: 1;
+    }
+}
+
+/* End Media queries */
