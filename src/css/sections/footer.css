@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    background-color: #fff;
+}
+
+.footer__logo {
+    font-variant-caps: small-caps;
+    color: var(--primary-color);
+    font-family: var(--playfair-display);
+    font-size: 24px;
+    font-weight: 900;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__menu {
+    display: flex;
+    flex: 1.235;
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 60px;
+    align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+}

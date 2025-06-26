@@ -1,0 +1,163 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.trending-sushi, .trending-drink {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    min-height: 640px;
+}
+
+.trending-sushi__content, .trending-drink__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 64px;
+}
+
+.sushi-subtitle, .drink-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--primary-color);
+    opacity: .8;
+    letter-spacing: -.01em;
+}
+
+.sushi-title, .drink-title {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--playfair-display);
+    color: var(--secondary-color);
+    margin-top: 16px;
+}
+
+.sushi-description,
+.drink-description {
+    font-size: 18px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: .8;
+    margin: 32px 0
+}
+
+.trending-icon {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.sushi-list, .drink-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.drink-list li div, .sushi-list li div {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+.sushi-list li,
+.drink-list li {
+    min-width: 200px;
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trending-sushi__image {
+    flex: 1;
+    background-image: url("../../assets/japanese_sushi.png");
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+        padding: 32px 64px;
+}
+
+.trending-drink__image {
+    flex: 1;
+    background-image: url("../../assets/japanese_drinks.png");
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    padding: 32px 64px;
+}
+
+.sushi-photo, .drink-photo {
+    width: 254px;
+    height: 260px;
+    object-fit: contain;
+}
+
+.discover-badge {
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-badge p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.upper-arrow-vertical {
+    position: absolute;
+    left: -2.5px;
+    top: 12%;   
+}
+
+.upper-arrow-horizontal {
+    position: absolute;
+    bottom: -6.5px;
+    right: 12%;
+}
+
+.lower-arrow-vertical {
+    position: absolute;
+    right: -2.5px;
+    bottom: 12%;
+}
+
+.lower-arrow-horizontal {
+    position: absolute;
+    top: -13.5px;
+    left: 12%;
+}
+

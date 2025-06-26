@@ -1,0 +1,143 @@
+.hero {
+    display: flex;
+}
+
+.hero__image {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    z-index: 5;
+} 
+
+.hero__image img {
+    width: 120%;
+    height: 100%;
+}
+
+.hero__image h2 {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    font-family: var(--playfair-display);
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 130px;
+}
+
+.hero__content {
+    flex: 1.22;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-image__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    justify-content: center;
+}
+
+.hero__info h1 {
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.hero__info p {
+    margin: 32px 0 0 32px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero__buttons {
+    margin: 41px 0 0 41px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+
+.hero__order-button {
+    padding: 20px;
+    border-radius: 36px;
+    min-width: 212px;
+    border: none;
+    background: var(--secondary-color);
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero__play-button {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--plus-jakarta-sans);
+    cursor: pointer;
+}
+
+.hero__testimonial {
+    background-color: #fff;
+    padding: 32px 64px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial__customer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial__customer h4 {
+    font-weight: 400;
+    font-size: 62px;
+    font-family: var(--playfair-display);
+}
+
+.testimonial__customer p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    opacity: .5;
+}
+
+.testimonial__review {
+    display: flex;
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid rgba(2, 2, 2, .1);
+    gap: 10px;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial__review img {
+    width: 42px;
+    height: 42px;
+}
+
+.testimonial__review p {
+    font-size: 12px;
+    line-height: 32px;
+    font-family: var(--plus-jakarta-sans);
+    opacity: .8;
+    font-weight: 400;
+}
