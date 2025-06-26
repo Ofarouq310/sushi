@@ -28,3 +28,13 @@
     padding: 20px;
     text-transform: uppercase;
 }
+
+.nav__mobile-menu {
+    padding: 20px;
+    flex: 1.235;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 64px;
+    list-style: none;
+}
